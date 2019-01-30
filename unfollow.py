@@ -1,14 +1,6 @@
 # Unfollower v1.0
 # Author: https://github.com/thelinuxchoice/unfollower
 
-printf "\e[1;93m  _   _        __       _ _                         \n"
-printf " | | | |_ __  / _| ___ | | | _____      _____ _ __  \n"
-printf " | | | | '_ \| |_ / _ \| | |/ _ \ \ /\ / / _ \ '__| \n"
-printf " | |_| | | | |  _| (_) | | | (_) \ V  V /  __/ |    \n"
-printf "  \___/|_| |_|_|  \___/|_|_|\___/ \_/\_/ \___|_|    \e[0m\n\n"
-printf "    \e[1;77mInstagram Unfollower, v1.0 by @linux_choice\e[0m\n\n"
-                                                   
-
 csrftoken=$(curl https://www.instagram.com/accounts/login/ajax -L -i -s | grep "csrftoken" | cut -d "=" -f2 | cut -d ";" -f1)
 unfollow() {
 
